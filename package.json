@@ -1,0 +1,23 @@
+{
+  "name": "nie-ine",
+  "version": "0.0.2",
+  "description": "nie-ine component collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nie-ine/npm-package"
+  },
+  "keywords": [
+    "NIE-INE",
+    "Angular",
+    "Digital",
+    "Humanities",
+    "Angular",
+    "Material"
+  ],
+  "author": "The NIE-INE developers",
+  "license": "ISC"
+}
