@@ -1,48 +1,8 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-# environemnet files with specific api and media urls
-environment.test.ts
-
-# compiled output
-/dist
-/tmp
-
-# dependencies
+$ cat .gitignore
 /node_modules
+/dist
+/documentation
+/coverage
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# misc
-.sass-cache
-/connect.lock
-/coverage/*
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
-
-# e2e
-/e2e/*.js
-/e2e/*.map
-
-#System Files
-.DS_Store
-Thumbs.db
-
-#Documentation Files
-docs/env
-docs/_build
-docs/_format_docu
-*.iml
+*.log
+*.tgz
