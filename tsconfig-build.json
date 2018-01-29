@@ -32,7 +32,7 @@
         "skipTemplateCodegen": true,
         "annotateForClosureCompiler": true,
         "strictMetadataEmit": true,
-        "flatModuleOutFile": "angular-library-starter.js",
-        "flatModuleId": "angular-library-starter"
+        "flatModuleOutFile": "nie-ine.js",
+        "flatModuleId": "nie-ine"
     }
 }
