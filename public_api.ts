@@ -9,6 +9,6 @@
 /**
  * Entry point for all public APIs of the package.
  */
-export * from './src/nie-ine-library';
+export * from './src/nie-ine';
 
 // This file only reexports content of the `src` folder. Keep it that way.

@@ -1,6 +1,6 @@
 import { inject, TestBed } from '@angular/core/testing';
 
-import { SumService } from '../../nie-ine-library';
+import { SumService } from '../../nie-ine';
 
 describe('SumService', () => {
 

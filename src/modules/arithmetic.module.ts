@@ -1,14 +1,16 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-
 import { SumService } from '../services/sum.service';
+import { ExampleComponent } from './exampleComponent/example.component';
 
 @NgModule({
     declarations: [
+        ExampleComponent
         // Pipes.
         // Directives.
         // Components.
     ],
     exports: [
+        ExampleComponent
         // Pipes.
         // Directives.
         // Components.
@@ -26,7 +28,10 @@ export class ArithmeticModule {
     public static forRoot(): ModuleWithProviders {
         return {
             ngModule: ArithmeticModule,
-            providers: [SumService]
+            providers: [
+                SumService,
+                ExampleComponent
+            ],
         };
     }
 
@@ -36,7 +41,10 @@ export class ArithmeticModule {
     public static forChild(): ModuleWithProviders {
         return {
             ngModule: ArithmeticModule,
-            providers: [SumService]
+            providers: [
+                SumService,
+                ExampleComponent
+            ]
         };
     }
 

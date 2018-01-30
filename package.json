@@ -1,11 +1,11 @@
 {
     "name": "nie-ine",
     "private": true,
-    "version": "0.0.5",
+    "version": "0.0.16",
     "description": "nie-ine component collection",
-    "main": "./bundles/nie-ine-library.umd.js",
-    "module": "./esm5/nie-ine-library.js",
-    "es2015": "./esm2015/nie-ine-library.js",
+    "main": "./bundles/nie-ine.umd.js",
+    "module": "./esm5/nie-ine.js",
+    "es2015": "./esm2015/nie-ine.js",
     "scripts": {
         "build": "node build.js",
         "test": "karma start",
@@ -15,7 +15,7 @@
         "compodoc": "compodoc -p tsconfig.json",
         "compodoc:serve": "compodoc -s"
     },
-    "typings": "./nie-ine-library.d.ts",
+    "typings": "./nie-ine.d.ts",
     "author": "",
     "repository": {
         "type": "git",
