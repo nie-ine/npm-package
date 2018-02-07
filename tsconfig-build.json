@@ -4,10 +4,10 @@
         "baseUrl": ".",
         "paths": {
             "@angular/*": [
-                "node_modules/@angular/*"
+                "../node_modules/@angular/*"
             ]
         },
-        "outDir": "dist",
+        "outDir": "../dist",
         "declaration": true,
         "strict": true,
         "moduleResolution": "node",
@@ -26,7 +26,7 @@
     },
     "files": [
         "public_api.ts",
-        "node_modules/zone.js/dist/zone.js.d.ts"
+        "../node_modules/zone.js/dist/zone.js.d.ts"
     ],
     "angularCompilerOptions": {
         "skipTemplateCodegen": true,
