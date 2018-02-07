@@ -16,7 +16,7 @@ declare let OpenSeadragon: any;
 
 @Component({
     selector: 'nie-image-frame',
-    template: `<div class="osdViewerContainer" [style.height]="height + 'px'" [style.width]="width + 'px'"></div>`
+    template: `<div class="osdViewerContainer" [ngStyle]="{'height': height + 'px', 'width': width + 'px'}"></div>`
 })
 export class ImageFrameComponent implements OnInit, OnChanges, OnDestroy {
 

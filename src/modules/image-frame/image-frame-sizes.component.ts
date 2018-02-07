@@ -9,7 +9,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
                <input type="radio" value="normal" name="viewerWidth" [ngModel]="viewerSize" (change)="radioChange('normal')"> Normal Viewer
                <input type="radio" value="large" name="viewerWidth" [ngModel]="viewerSize" (change)="radioChange('large')"> Large Viewer
 
-               <ng-content select="app-image-frame" ></ng-content>`
+               <ng-content select="nie-image-frame" ></ng-content>`
 })
 export class ImageFrameSizesComponent implements OnInit {
 
