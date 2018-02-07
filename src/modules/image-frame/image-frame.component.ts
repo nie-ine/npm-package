@@ -5,8 +5,13 @@ import {
     Component, Input, OnInit, OnChanges, SimpleChange, ElementRef, OnDestroy
 } from '@angular/core';
 
-// This component needs the openseadragon library itself, as well as the openseadragon plugin openseadragon-svg-overlay
-// Both libraries are installed via package.json, and loaded globally via the script tag in .angular-cli.json
+// This component needs the openseadragon library which installed via package.json, and loaded globally via the script tag in .angular-cli.json
+
+// in .angular-cli.json add openseadragon.min.js under scripts like written here:
+
+//      "scripts": [
+// +        "../node_modules/openseadragon/build/openseadragon/openseadragon.min.js"
+//      ],
 
 // OpenSeadragon does not export itself as ES6/ECMA2015 module,
 // it is loaded globally in scripts tag of angular-cli.json,
