@@ -25,9 +25,9 @@ declare let OpenSeadragon: any;
 })
 export class ImageFrameComponent implements OnInit, OnChanges, OnDestroy {
 
-    @Input() public image: any;
-    @Input() public width: number;
-    @Input() public height: number;
+    @Input() public image?: any;
+    @Input() public width: number = 1;
+    @Input() public height: number = 1;
 
     private viewer: any;
 

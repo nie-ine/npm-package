@@ -13,7 +13,7 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 })
 export class ImageFrameSizesComponent implements OnInit {
 
-    viewerWidth: number;
+    viewerWidth: number = 10;
     viewerSize = 'small';
     @Output() viewerWidthChange: EventEmitter<number> = new EventEmitter<number>();
 
