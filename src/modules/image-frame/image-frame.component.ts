@@ -70,18 +70,13 @@ export class ImageFrameComponent implements OnInit, OnChanges, OnDestroy {
 
     private openImage(): void {
 
-        const domain = this.image.path.split('/')[2];
-        const pathToDB = this.image.path.split('/')[3];
-        const filename = this.image.path.split('/')[4];
-
-        const sipiBasePath = 'http://' + domain + '/' + pathToDB + '/' + filename;
-
         const tileSource = {
             'tileSource': {
                 '@context': 'http://iiif.io/api/image/2/context.json',
-                '@id': sipiBasePath,
-                'height': this.image.ny,
-                'width': this.image.nx,
+                '@id': this.image['knora-api:stillImageFileValueHasIIIFBaseUrl'] + '/'
+                + this.image['knora-api:fileValueHasFilename'],
+                'height': this.image['knora-api:stillImageFileValueHasDimY'],
+                'width': this.image['knora-api:stillImageFileValueHasDimX'],
                 'profile': ['http://iiif.io/api/image/2/level2.json'],
                 'protocol': 'http://iiif.io/api/image',
                 'tiles': [{
