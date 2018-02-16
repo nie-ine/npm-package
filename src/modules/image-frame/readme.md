@@ -34,7 +34,7 @@ In .angular-cli.json under apps.scripts add
 Input variables
 ---------------
 
-width: number
+width: number (initiate for example with width = 100; in your project)
 
 height: number
 
