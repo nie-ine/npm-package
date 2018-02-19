@@ -1,7 +1,7 @@
 {
     "name": "nie-ine",
     "private": true,
-    "version": "0.0.16",
+    "version": "0.0.18",
     "description": "nie-ine component collection",
     "main": "./bundles/nie-ine.umd.js",
     "module": "./esm5/nie-ine.js",
