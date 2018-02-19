@@ -32,7 +32,10 @@
     ],
     "license": "MIT",
     "dependencies": {
+        "@angular/cdk": ">= 5.0.0",
         "@angular/forms": ">= 5.0.0",
+        "@angular/material": ">= 5.0.0",
+        "@angular/router": ">= 5.0.0",
         "tslib": "^1.7.1"
     },
     "peerDependencies": {

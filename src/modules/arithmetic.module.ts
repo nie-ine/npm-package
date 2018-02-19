@@ -5,12 +5,16 @@ import { ImageFrameSizesComponent } from './image-frame/image-frame-sizes.compon
 import { ImageFrameComponent } from './image-frame/image-frame.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { SubjectTagChipsComponent } from './subject-tag-chips/subject-tag-chips.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [
         ExampleComponent,
         ImageFrameComponent,
-        ImageFrameSizesComponent
+        ImageFrameSizesComponent,
+        SubjectTagChipsComponent
         // Pipes.
         // Directives.
         // Components.
@@ -18,14 +22,17 @@ import { CommonModule } from '@angular/common';
     exports: [
         ExampleComponent,
         ImageFrameComponent,
-        ImageFrameSizesComponent
+        ImageFrameSizesComponent,
+        SubjectTagChipsComponent
         // Pipes.
         // Directives.
         // Components.
     ],
     imports: [
         CommonModule,
-        FormsModule
+        FormsModule,
+        MatChipsModule,
+        RouterModule
     ]
 })
 // Consider registering providers using a forRoot() method
@@ -44,7 +51,8 @@ export class ArithmeticModule {
                 SumService,
                 ExampleComponent,
                 ImageFrameComponent,
-                ImageFrameSizesComponent
+                ImageFrameSizesComponent,
+                SubjectTagChipsComponent
             ],
         };
     }
@@ -59,7 +67,8 @@ export class ArithmeticModule {
                 SumService,
                 ExampleComponent,
                 ImageFrameComponent,
-                ImageFrameSizesComponent
+                ImageFrameSizesComponent,
+                SubjectTagChipsComponent
             ]
         };
     }
