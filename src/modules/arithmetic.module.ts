@@ -1,19 +1,31 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { SumService } from '../services/sum.service';
 import { ExampleComponent } from './exampleComponent/example.component';
+import { ImageFrameSizesComponent } from './image-frame/image-frame-sizes.component';
+import { ImageFrameComponent } from './image-frame/image-frame.component';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations: [
-        ExampleComponent
+        ExampleComponent,
+        ImageFrameComponent,
+        ImageFrameSizesComponent
         // Pipes.
         // Directives.
         // Components.
     ],
     exports: [
-        ExampleComponent
+        ExampleComponent,
+        ImageFrameComponent,
+        ImageFrameSizesComponent
         // Pipes.
         // Directives.
         // Components.
+    ],
+    imports: [
+        CommonModule,
+        FormsModule
     ]
 })
 // Consider registering providers using a forRoot() method
@@ -30,7 +42,9 @@ export class ArithmeticModule {
             ngModule: ArithmeticModule,
             providers: [
                 SumService,
-                ExampleComponent
+                ExampleComponent,
+                ImageFrameComponent,
+                ImageFrameSizesComponent
             ],
         };
     }
@@ -43,7 +57,9 @@ export class ArithmeticModule {
             ngModule: ArithmeticModule,
             providers: [
                 SumService,
-                ExampleComponent
+                ExampleComponent,
+                ImageFrameComponent,
+                ImageFrameSizesComponent
             ]
         };
     }

@@ -6,7 +6,7 @@ export class SumService {
     /**
      * Stores the last sum.
      */
-    public sum: number;
+    public sum: number = 0;
 
     /**
      * Calculates the sum.
