@@ -7,7 +7,9 @@
   </mat-form-field>
 
   <div *ngIf="searchResults">
-    <div  *ngFor="let result of searchResults.subjects" [innerHTML]="result.value[1]">
+    <div  *ngFor="let result of searchResults.subjects; let i = index;" >
+      <br> {{ i }}
+      <div [innerHTML]="result.value[1]" ></div>
     </div>
   </div>
 
