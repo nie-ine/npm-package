@@ -6,6 +6,10 @@ import { ImageFrameComponent } from './image-frame/image-frame.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SearchComponent } from "./searchComponent/search.component";
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -28,7 +32,11 @@ import { SearchComponent } from "./searchComponent/search.component";
     ],
     imports: [
         CommonModule,
-        FormsModule
+        FormsModule,
+        MatInputModule,
+        MatIconModule,
+        MatButtonModule,
+        HttpClientModule
     ]
 })
 // Consider registering providers using a forRoot() method

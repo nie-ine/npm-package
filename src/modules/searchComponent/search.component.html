@@ -1,1 +1,15 @@
-Suche2
+<div class="container">
+  <mat-form-field >
+    <input matInput type="text" placeholder="Suche" [(ngModel)]="searchTerm"/>
+    <button mat-button matSuffix mat-icon-button (click)="startSearch()">
+      <mat-icon>forward</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <div *ngIf="searchResults">
+    <div  *ngFor="let result of searchResults.subjects" [innerHTML]="result.value[1]">
+    </div>
+  </div>
+
+
+</div>
