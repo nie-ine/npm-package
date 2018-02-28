@@ -5,12 +5,14 @@ import { ImageFrameSizesComponent } from './image-frame/image-frame-sizes.compon
 import { ImageFrameComponent } from './image-frame/image-frame.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { SearchComponent } from "./searchComponent/search.component";
 
 @NgModule({
     declarations: [
         ExampleComponent,
         ImageFrameComponent,
-        ImageFrameSizesComponent
+        ImageFrameSizesComponent,
+        SearchComponent
         // Pipes.
         // Directives.
         // Components.
@@ -18,7 +20,8 @@ import { CommonModule } from '@angular/common';
     exports: [
         ExampleComponent,
         ImageFrameComponent,
-        ImageFrameSizesComponent
+        ImageFrameSizesComponent,
+        SearchComponent
         // Pipes.
         // Directives.
         // Components.
@@ -44,7 +47,8 @@ export class ArithmeticModule {
                 SumService,
                 ExampleComponent,
                 ImageFrameComponent,
-                ImageFrameSizesComponent
+                ImageFrameSizesComponent,
+                SearchComponent
             ],
         };
     }
@@ -59,7 +63,8 @@ export class ArithmeticModule {
                 SumService,
                 ExampleComponent,
                 ImageFrameComponent,
-                ImageFrameSizesComponent
+                ImageFrameSizesComponent,
+                SearchComponent
             ]
         };
     }
