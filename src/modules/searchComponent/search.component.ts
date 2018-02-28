@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { highlight } from '../../services/highlightSearchTerm.service';
+
 
 @Component({
     selector: 'nie-search',
@@ -21,6 +23,7 @@ export class SearchComponent {
         this.searchResults = data;
         console.log(data);
       });
+    highlight();
   }
 
 }
