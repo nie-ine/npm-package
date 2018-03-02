@@ -9,7 +9,9 @@ import { SearchComponent } from "./searchComponent/search.component";
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { HttpClientModule } from '@angular/common/http';
+import { HighlightSearchTermService } from "../services/highlightSearchTerm.service";
+import { HttpClientModule } from "@angular/common/http";
+
 
 @NgModule({
     declarations: [
@@ -56,7 +58,8 @@ export class ArithmeticModule {
                 ExampleComponent,
                 ImageFrameComponent,
                 ImageFrameSizesComponent,
-                SearchComponent
+                SearchComponent,
+                HighlightSearchTermService
             ],
         };
     }
@@ -72,9 +75,9 @@ export class ArithmeticModule {
                 ExampleComponent,
                 ImageFrameComponent,
                 ImageFrameSizesComponent,
-                SearchComponent
+                SearchComponent,
+                HighlightSearchTermService
             ]
         };
     }
-
 }
