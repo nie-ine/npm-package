@@ -1,7 +1,10 @@
 import { Injectable } from '@angular/core';
 
+
 @Injectable()
 export class HighlightSearchTermService {
+
+  constructor() {}
 
   j: number;
 
@@ -10,15 +13,15 @@ export class HighlightSearchTermService {
    * @param addends Numbers to be added
    */
   public highlight(textToHighlight: string, searchTermArray: Array<string>) {
-    console.log('Highlight');
+    //console.log('Highlight');
     //console.log(textToHighlight);
     //console.log(searchTermArray);
     if (searchTermArray === undefined) {
       return textToHighlight;
     }
     this.j = 0;
-    for (let seachTerm of searchTermArray) {
-      textToHighlight = this.highlightSingleSearchTerm(textToHighlight, seachTerm, this.j);
+    for (let searchTerm of searchTermArray) {
+      textToHighlight = this.highlightSingleSearchTerm(textToHighlight, searchTerm, this.j);
       this.j += 1;
     }
     return textToHighlight;
