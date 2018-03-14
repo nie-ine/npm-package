@@ -5,8 +5,8 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
     selector: 'nie-search',
-    templateUrl: './search.component.html',
-    styleUrls: ['./search.component.scss']
+    template: '<div class="container"><mat-form-field><input matInput type="text" placeholder="Suche" [(ngModel)]="searchInput"> <button mat-button matSuffix mat-icon-button (click)="startSearch()"><mat-icon>forward</mat-icon></button></mat-form-field><div *ngIf="searchResults"><div *ngFor="let result of searchResults.subjects; let i = index;"><br>{{ i }}<div [innerHTML]="highlight(result.value[1], searchTermArray)" ></div></div></div></div>',
+    styles: ['.container{width:300px;overflow:auto;height:500px}']
 })
 export class SearchComponent {
   results: any;
