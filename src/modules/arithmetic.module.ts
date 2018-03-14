@@ -55,6 +55,9 @@ import {
         // Directives.
         // Components.
     ],
+    providers: [
+        HighlightSearchTermService
+    ],
     exports: [
         ExampleComponent,
         ImageFrameComponent,

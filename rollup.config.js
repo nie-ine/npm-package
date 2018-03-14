@@ -75,7 +75,8 @@ const globals = {
     'rxjs/observable/combineLatest': 'Rx.Observable.combineLatest',
     'rxjs/observable/fromEventPattern': 'Rx.Observable.fromEventPattern',
     'rxjs/BehaviorSubject': 'Rx.BehaviorSubject',
-    'rxjs/observable/empty': 'Rx.Observable.empty'
+    'rxjs/observable/empty': 'Rx.Observable.empty',
+    'rxjs/operators/combineLatest': 'Rx.Operators.combineLatest'
 };
 
 export default {
