@@ -46,7 +46,8 @@ const globals = {
     '@angular/common': 'ng.common',
     '@angular/forms': 'ng.forms',
     'rxjs/Observable': 'Rx',
-    'rxjs/Observer': 'Rx'
+    'rxjs/Observer': 'Rx',
+    '@angular/material/input': 'ng.material.input'
 };
 
 export default {
