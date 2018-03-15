@@ -5,7 +5,45 @@ import { ImageFrameSizesComponent } from './image-frame/image-frame-sizes.compon
 import { ImageFrameComponent } from './image-frame/image-frame.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { SearchComponent } from "./searchComponent/search.component";
+import { SearchComponent } from './searchComponent/search.component';
+import { HighlightSearchTermService } from '../services/highlightSearchTerm.service';
+import { HttpClientModule } from '@angular/common/http';
+import {
+    MatAutocompleteModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule, MatChipsModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatLineModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatOptionModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatPseudoCheckboxModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSlideToggleModule,
+    MatSliderModule,
+    MatSnackBarModule,
+    MatSortModule,
+    MatStepperModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule
+} from '@angular/material';
+
 
 @NgModule({
     declarations: [
@@ -16,6 +54,9 @@ import { SearchComponent } from "./searchComponent/search.component";
         // Pipes.
         // Directives.
         // Components.
+    ],
+    providers: [
+        HighlightSearchTermService
     ],
     exports: [
         ExampleComponent,
@@ -28,7 +69,44 @@ import { SearchComponent } from "./searchComponent/search.component";
     ],
     imports: [
         CommonModule,
-        FormsModule
+        FormsModule,
+        MatInputModule,
+        MatIconModule,
+        MatButtonModule,
+        HttpClientModule,
+        MatAutocompleteModule,
+        MatButtonModule,
+        MatButtonToggleModule,
+        MatCardModule,
+        MatCheckboxModule, MatChipsModule,
+        MatDatepickerModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        MatGridListModule,
+        MatIconModule,
+        MatInputModule,
+        MatLineModule,
+        MatListModule,
+        MatMenuModule,
+        MatNativeDateModule,
+        MatOptionModule,
+        MatPaginatorModule,
+        MatProgressBarModule,
+        MatProgressSpinnerModule,
+        MatPseudoCheckboxModule,
+        MatRadioModule,
+        MatRippleModule,
+        MatSelectModule,
+        MatSidenavModule,
+        MatSlideToggleModule,
+        MatSliderModule,
+        MatSnackBarModule,
+        MatSortModule,
+        MatStepperModule,
+        MatTableModule,
+        MatTabsModule,
+        MatToolbarModule,
+        MatTooltipModule
     ]
 })
 // Consider registering providers using a forRoot() method
@@ -48,7 +126,8 @@ export class ArithmeticModule {
                 ExampleComponent,
                 ImageFrameComponent,
                 ImageFrameSizesComponent,
-                SearchComponent
+                SearchComponent,
+                HighlightSearchTermService
             ],
         };
     }
@@ -64,9 +143,9 @@ export class ArithmeticModule {
                 ExampleComponent,
                 ImageFrameComponent,
                 ImageFrameSizesComponent,
-                SearchComponent
+                SearchComponent,
+                HighlightSearchTermService
             ]
         };
     }
-
 }
